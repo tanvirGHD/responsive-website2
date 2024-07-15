@@ -71,7 +71,6 @@
     margin-left: 47%;
 }
 .banner{
-   
     margin-top: 50px;
     margin-left: 210px;
     margin-right: 210px;
@@ -100,8 +99,7 @@
     }
     .banner{
         width: 100%;
-        margin-left: 0px;
-        
+        margin-left: 0px;   
     }
     .banner img{
         margin-bottom: 40px;
@@ -112,6 +110,26 @@
     .btn button {
         margin-left: 30%;
     }
-    
+}
+/*Responsive with medium divice*/
+@media screen and (max-width:992px) and (min-width:576px){
+    .nav-content{
+        margin-right: 0px;
+    }
+    .heading {
+        width: 800px;  
+    }
+    .head{
+        flex-direction: column;
+    }
+    .head h3{
+        margin-left: 0px;
+    }
+    .banner {
+        margin-left: 80px;   
+    }
+    .banner img {
+        width: 650px;   
+    }
 }
 
