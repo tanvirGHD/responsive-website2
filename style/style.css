@@ -62,7 +62,7 @@
 .btn-primary{
     color: white;
     background: rgb(255, 144, 14);
-    padding: 20px 25px;
+    padding: 15px 20px;
     border-radius: 8px;
     border: none;
     font-size: 1.1rem;  
@@ -78,9 +78,49 @@
 .banner img{
     width: 100%;
 }
-
 /*Header Style End*/
-
+/*start Gallery features style*/
+.features{
+    margin-bottom: 70px;
+}
+.our-features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.our-features-container{
+    display: flex;
+    flex-direction:  row;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-left: 40px;
+    margin-top: 85px; 
+}
+.features-content{
+    width: 700px;
+    margin-top: 287px;
+    margin-left: 76px; 
+}
+.features-content h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 53px;
+    margin-bottom: 24px;
+}
+.features-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.third{
+    color:rgb(255, 144, 14);
+}
+/*End Gallery features style*/
 /*Responsive with Mobile*/
 @media screen and (max-width:576px) {
     .nav-content{
@@ -110,7 +150,35 @@
     .btn button {
         margin-left: 30%;
     }
+    /*features style*/
+    .gallery{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0px;
+    }
+    .our-features-container{
+        flex-direction:column-reverse;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .gallery img{
+        width: 100%;
+    }
+    .features-content {
+        width: 700px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .features-content p{
+        width: 400px;
+        margin-top: 7px;
+        margin-left: 6px;
+    }
+    
+       
+    
 }
+
+
 /*Responsive with medium divice*/
 @media screen and (max-width:992px) and (min-width:576px){
     .nav-content{
@@ -131,5 +199,19 @@
     .banner img {
         width: 650px;   
     }
+    /*features style*/
+    .gallery{
+        margin-left: 0px;
+        gap: 36px;
+    }
+    .our-features-container{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .our-features-container{
+        flex-direction:column-reverse;
+        margin-left: 0px;
+        margin-right: 0px;
+    } 
 }
 
