@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+/* shair color style*/
+.dark-2{
+    color: rgb(66, 66, 66);
+}
+/*Header Style Start*/
+.heading{
+    width: 1891px;
+    height: 1370px;
+    background: rgba(255, 144, 14, 0.1);   
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    
+}
+.nav-item{
+    list-style: none;
+    font-size: 1.25rem;
+}
+.nav-content a{
+    text-decoration: none;
+    margin-top: 160px;
+    margin-right: 60px;
+}
+.nav-content{
+    margin-right: 180px;
+    margin-top: 30px;
+}
+.brand-title{
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: center;
+}
+.brand-description{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.btn-primary{
+    color: white;
+    background: rgb(255, 144, 14);
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;  
+}
+.btn button{
+    margin-left: 47%;
+}
+.banner{
+   
+    margin-top: 50px;
+    margin-left: 210px;
+    margin-right: 210px;
+}
+.banner img{
+    width: 100%;
+}
+
+/*Header Style End*/
+
+/*Responsive with Mobile*/
+@media screen and (max-width:576px) {
+    .nav-content{
+        flex-direction: column; 
+    }
+    .nav-item{
+        padding-top: 20px;
+    }
+    .heading{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .head{
+        flex-direction: column;
+    }
+    .banner{
+        width: 100%;
+        margin-left: 0px;
+        
+    }
+    .banner img{
+        margin-bottom: 40px;
+    }
+    .head h3 {
+        margin-left: 0px;
+    }
+    .btn button {
+        margin-left: 30%;
+    }
+    
+}
+
